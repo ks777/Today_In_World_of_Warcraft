@@ -12,4 +12,5 @@ if __name__ == '__main__':
     except ValueError:
         PORT = 5000
     app.debug = True
+    app.threaded = True
     app.run(HOST, PORT)

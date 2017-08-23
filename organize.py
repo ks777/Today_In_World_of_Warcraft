@@ -38,4 +38,6 @@ def info_creation():
 #current situation: need to reword/reformat code for Flask/website usage.
 #need to also work on website design
 #possible solution: define another variable and run it with the for loop to output each correct row
-    
+
+
+#NOT NEEDED, BUT KEEP FOR REFERENCE.
