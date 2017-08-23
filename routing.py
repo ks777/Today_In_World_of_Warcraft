@@ -8,7 +8,7 @@ import pymysql, time
 #page/server-side interaction
 @app.route('/')
 def main():
-    done = ' '
+    done = [ ]
     target = int(time.strftime("%d")) # set the day to search throughout the database
     #accessing the database
     conn = pymysql.connect(host='localhost', port= 3306, user='root', passwd='hello', db='wowfactsheet')
@@ -18,8 +18,9 @@ def main():
     for i in range(cur.rowcount):
         row = cur.fetchone()
         if row[0] == target:
-            done = done +'\n' + row[1] #row[1] should contain the needed info
-            print('\n',row[1])
+            done.append(row[1]) #row[1] should contain the needed info
+            print("""%s\n""" %(row[1]))
+    #print(len(done))
     cur.close()
     conn.close()
     return render_template('finalizedstate.html', done = done)
