@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang = 'en' xmins = "http://www.w3.org/1999/xhtml" style="width = auto;">
 <meta http-equiv ="Content-type" content="text/html;charset=utf-8">
-<link rel="style" href="file:///C:/Users/Kevin/Desktop/TodayInWoW/templates/fixing.css">
 <head>
 	<meta charset = "utf-8"/>
-	<link rel="style" href="file:///C:/Users/Kevin/Desktop/TodayInWoW/templates/fixing.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
+	<style>
+	td {
+		text-align: left;
+		padding: 0;
+		margin: 0;
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	</style>
 </head>
 <body>
 <table>
 {% for row in done %}
     <tr>
-    {% for d in row %}
-        <td>{{d}}</td>
-    {% endfor %}
+        <td>{{row}}<br/><br/></td>
     </tr>
 {% endfor %}
 </table>
