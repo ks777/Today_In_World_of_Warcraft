@@ -2,12 +2,24 @@
 <html lang = 'en' xmins = "http://www.w3.org/1999/xhtml" style="width = auto;">
 <meta http-equiv ="Content-type" content="text/html;charset=utf-8">
 <head>
+	<link rel="shortcut icon" type="image/x-icon" href="/static/images/argus.png">
 	<meta charset = "utf-8"/>
+	<title> Just a bit of a side-project, but will try to keep updating regularly! </title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style>
-	td {
+	.bg-1{
+		background-image: url('/static/images/legionwallpaper.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		position: relative;
+	}
+	td{
 		text-align: left;
 		padding: 0;
 		margin: 0;
@@ -16,7 +28,7 @@
 	}
 	</style>
 </head>
-<body>
+<body class = "container-fluid bg-1">
 <table>
 {% for row in done %}
     <tr>
