@@ -11,7 +11,7 @@ def main():
     done = [ ]
     target = int(time.strftime("%d")) # set the day to search throughout the database
     #accessing the database
-    conn = pymysql.connect(host='localhost', port= 3306, user='root', passwd='hello', db='wowfactsheet')
+    conn = pymysql.connect(host='localhost', port= 3306, user='root', passwd='hello', db='wowfactsheet', charset = 'utf8')
     cur = conn.cursor()
     facts = cur.execute("SELECT wowday, wowinfo FROM wowfacts")
 
