@@ -45,6 +45,10 @@
 		display:flex;
 	}
 	
+	.table:hover{
+		background-color: #FFFF6A;
+	}
+	
 	.table > *{
 		flex: 1;
 		border: 1px solid green;
@@ -56,24 +60,26 @@
 		margin: 0px -13px 0px -13px;
 	
 	}
+	.footer {
+		height:75px; // Replace with the height your footer should be
+		width: 100%; 
+		background-image: none;
+		background-repeat: repeat;
+		background-attachment: scroll;
+		position: fixed;
+		bottom: 0pt;
+		right: 0pt;
+		left: 0pt;
+	}   
 	
-	html, body {
-		height: 100%;
-		margin: 0;
+	.footer_contents {
+		height:75px; // Replace with the height your footer should be
+		width: 1000px; // Visible width of footer
+		margin: auto;
 	}
 	
-	.wrapper {
-		min-height: 100%;
-		margin-bottom: -50px;
-	}
-
-	.footer,{
-		height: 354px;
-	}
-	
-	.push{
-		height: 354px;
-		visibility: hidden;
+	aside:hover {
+		background: #FFFF00;
 	}
 	</style>
 	
@@ -83,11 +89,17 @@
 			<img src="https://fontmeme.com/permalink/170831/1564183412b67616942a0f49875e2a26.png" alt="world-of-warcraft-font" border="0">
 			<img src = "static/images/horde.png">
 		</center>
-
 	<div4>
+	<div5>
+		<center>
+			<font size = "6" color="green">
+				<script> document.write(new Date().toLocaleDateString()); </script>
+			</font>
+		</center>
+	</div5>
 </head>
 <body class = "container-fluid bg-1" style = "width:100%; height: 100%;">
-<div class = 'table' style = "margin: 0px; width:100%;">
+<div id = "home" class = 'table' style = "margin: 0px; width:100%;">
 	<aside>
 		<a href="http://wowwiki.wikia.com/wiki/Timeline_(World_of_Warcraft)">
 			<div style = "color:green; width: 100%;">
@@ -123,12 +135,10 @@
 </div>
 </body>
 
-
 <footer class = "footer">
-	<div class = "wrapper"></div>
-	<div class = "push"></div>
-	<div style = "background-color: black; margin-right: -15px; margin-left:-15px; color: green; opacity: 0.5; text-align: center; padding-bottom: 1px;">
+	<div class ="footer_contents" style = "background-color: black; margin-right: -15px; margin-left:-15px; color: green; opacity: 0.5; text-align: center; padding-bottom: 1px;">
 		<p>&copy;HK Productions 2017 <br> All the information used was gathered from multiple websites (wowwiki, wowpedia, and wowprogress, respectively), which were cited at the top of the page via links.<br>Special thanks to fontmeme.com for allowing me to not spend hours in gimp for a title sequence!</p>	
 	</div>
 </footer>
+
 </html>
