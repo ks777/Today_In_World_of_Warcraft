@@ -19,17 +19,99 @@
 		background-size: cover;
 		position: relative;
 	}
+	
 	td{
 		text-align: left;
 		padding: 0;
 		margin: 0;
-		border-collapse: collapse;
 		border-spacing: 0;
 	}
+	
+	center{
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	
+	div4{
+		text-align:justify;
+	}
+	
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.table{
+		display:flex;
+	}
+	
+	.table > *{
+		flex: 1;
+		border: 1px solid green;
+		position: relative;
+		background-color: black;
+		opacity: 1;
+		text-align: center;
+		padding: 25px;
+		margin: 0px -13px 0px -13px;
+	
+	}
+	
+	html, body {
+		height: 100%;
+		margin: 0;
+	}
+	
+	.wrapper {
+		min-height: 100%;
+		margin-bottom: -50px;
+	}
+
+	.footer,{
+		height: 354px;
+	}
+	
+	.push{
+		height: 354px;
+		visibility: hidden;
+	}
 	</style>
-	<img src="https://fontmeme.com/permalink/170829/c0e1bd8dac7cfed80753e283cc729a7d.png" alt="world-of-warcraft-font" border="0" align="center">
+	
+	<div4>
+		<center>
+			<img src = "static/images/alliance.png">
+			<img src="https://fontmeme.com/permalink/170831/1564183412b67616942a0f49875e2a26.png" alt="world-of-warcraft-font" border="0">
+			<img src = "static/images/horde.png">
+		</center>
+
+	<div4>
 </head>
-<body class = "container-fluid bg-1">
+<body class = "container-fluid bg-1" style = "width:100%; height: 100%;">
+<div class = 'table' style = "margin: 0px; width:100%;">
+	<aside>
+		<a href="http://wowwiki.wikia.com/wiki/Timeline_(World_of_Warcraft)">
+			<div style = "color:green; width: 100%;">
+				<p>WoW-Wiki</p>
+			</div>
+		</a>
+	</aside>
+	
+	<aside>
+		<a href="https://wow.gamepedia.com/Timeline_(World_of_Warcraft)#2016">
+			<div style = "color:green; width:100%;">
+				<p>Wowpedia</p>
+			</div>
+		</a>
+	</aside>
+	
+	<aside>
+		<a href="https://www.wowprogress.com/">
+			<div style = "color:green; width:100%;">
+				<p>Wowprogress</p>
+			</div>
+		</a>
+	</aside>
+</div>
 <div style = "background-color: black; color:green; padding: 20px; opacity: 0.5; margin-right: -15px; margin-left: -15px;" >
 	<table>
 	{% for row in done %}
@@ -40,8 +122,12 @@
 	</table>
 </div>
 </body>
-<footer>
-	<div style = "color: green; opacity: 0.5; text-align: center;">
+
+
+<footer class = "footer">
+	<div class = "wrapper"></div>
+	<div class = "push"></div>
+	<div style = "background-color: black; margin-right: -15px; margin-left:-15px; color: green; opacity: 0.5; text-align: center; padding-bottom: 1px;">
 		<p>&copy;HK Productions 2017 <br> All the information used was gathered from multiple websites (wowwiki, wowpedia, and wowprogress, respectively), which were cited at the top of the page via links.<br>Special thanks to fontmeme.com for allowing me to not spend hours in gimp for a title sequence!</p>	
 	</div>
 </footer>
