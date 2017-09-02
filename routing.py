@@ -23,8 +23,18 @@ def main():
     #print(len(done))
     cur.close()
     conn.close()
-    return render_template('finalizedstate.html', done = done)
-
+    if target == 7:
+        return render_template('finalizedstate2.html', done = done)
+# Right now, i`m leaving these commented. While I can check If this method will work,
+# I don`t want to lose sleep over it. So atm, i`ll check back in the 7th of the month, and if i works, i`ll proceed.
+# Otherwise the month is up and i should move on to other projects.
+#    elif target == 13:
+#    elif target == 15:
+#    elif target == 23:
+#    elif target == 25:
+#    elif target == 30:
+    else:
+        return render_template('finalizedstate.html', done = done)
 
 #works if i do the interaction on the same page. i guess it felt a bit out of place for me.
 #current problems: seperate the text/add the time/add set language for chinese wording
