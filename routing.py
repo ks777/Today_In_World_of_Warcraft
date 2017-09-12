@@ -26,15 +26,20 @@ def main():
     if target == 7:
         return render_template('finalizedstate2.html', done = done)
 # Right now, i`m leaving these commented. While I can check If this method will work,
-# I don`t want to lose sleep over it. So atm, i`ll check back in the 7th of the month, and if i works, i`ll proceed.
-# Otherwise the month is up and i should move on to other projects.
-#    elif target == 13:
-#    elif target == 15:
-#    elif target == 23:
-#    elif target == 25:
-#    elif target == 30:
+# I have decided to finish this since i have a bit of time.
+    elif target == 13:
+        return render_template('finalizedstate3.html', done = done)
+    elif target == 15:
+        return render_template('finalizedstate4.html', done = done)
+    elif target == 23:
+        return render_template('finalizedstate5.html', done = done)
+    elif target == 25:
+        return render_template('finalizedstate6.html', done = done)
+    elif target == 30:
+        return render_template('finalizedstate7.html', done = done)
     else:
         return render_template('finalizedstate.html', done = done)
 
-#works if i do the interaction on the same page. i guess it felt a bit out of place for me.
-#current problems: seperate the text/add the time/add set language for chinese wording
+#Only problem/task left before 100% completion: There are 2 dates (13th) that need to have 2 different backgrounds
+#Aside from javascript, i will need to figure out a way to implement this.
+#Like i said, something i`ll improve over time/not really focused on this project right now.

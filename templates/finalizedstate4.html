@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang = 'en' xmins = "http://www.w3.org/1999/xhtml" style="width = auto;">
+<meta http-equiv ="Content-type" content="text/html" charset= "utf-8">
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="/static/images/argus.png">
+	<meta charset = "utf-8"/>
+	<title> Just a bit of a side-project, but will try to keep updating regularly! </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	.bg-1{
+		background-image: url('/static/images/BCwallpaper.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		position: relative;
+	}
+	
+	td{
+		text-align: left;
+		padding: 0;
+		margin: 0;
+		border-spacing: 0;
+	}
+	
+	center{
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	
+	div4{
+		text-align:justify;
+	}
+	
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.table{
+		display:flex;
+	}
+	
+	.table:hover{
+		background-color: #ff0000;
+	}
+	
+	.table > *{
+		flex: 1;
+		border: 1px solid green;
+		position: relative;
+		background-color: black;
+		opacity: 1;
+		text-align: center;
+		padding: 25px;
+		margin: 0px -15px 0px -15px;
+	
+	}
+	.footer {
+		height:75px; // Replace with the height your footer should be
+		width: 100%; 
+		background-image: none;
+		background-repeat: repeat;
+		background-attachment: scroll;
+		position: fixed;
+		bottom: 0pt;
+		right: 0pt;
+		left: 0pt;
+	}   
+	
+	.footer_contents {
+		height:75px; // Replace with the height your footer should be
+		width: 1000px; // Visible width of footer
+		margin: auto;
+	}
+	
+	aside:hover {
+		background: #008000;
+	}
+	</style>
+	
+	<div4>
+		<center>
+			<img src = "static/images/alliance.png">
+			<img src="https://fontmeme.com/permalink/170831/1564183412b67616942a0f49875e2a26.png" alt="world-of-warcraft-font" border="0">
+			<img src = "static/images/horde.png">
+		</center>
+	<div4>
+	<div5>
+		<center>
+			<font size = "6" color="green">
+				<script> document.write(new Date().toLocaleDateString()); </script>
+			</font>
+		</center>
+	</div5>
+</head>
+<body class = "container-fluid bg-1" style = "width:100%; height: 100%;">
+<div id = "home" class = 'table' style = "margin: 0px; width:100%;">
+	<aside>
+		<a href="http://wowwiki.wikia.com/wiki/Timeline_(World_of_Warcraft)">
+			<div style = "color:purple; width: 100%;">
+				<p>WoW-Wiki</p>
+			</div>
+		</a>
+	</aside>
+	
+	<aside>
+		<a href="https://wow.gamepedia.com/Timeline_(World_of_Warcraft)#2016">
+			<div style = "color:purple; width:100%;">
+				<p>Wowpedia</p>
+			</div>
+		</a>
+	</aside>
+	
+	<aside>
+		<a href="https://www.wowprogress.com/">
+			<div style = "color:purple; width:100%;">
+				<p>Wowprogress</p>
+			</div>
+		</a>
+	</aside>
+</div>
+<div style = "background-color: black; color:purple; padding: 20px; opacity: 0.8; margin-right: -15px; margin-left: -15px;" >
+	<table>
+	{% for row in done %}
+		<tr>
+			<td>{{row}}<br/><br/></td>
+		</tr>
+	{% endfor %}
+	</table>
+</div>
+</body>
+
+<footer class = "footer">
+	<div class ="footer_contents" style = "background-color: black; margin-right: -15px; margin-left:-15px; color: green; opacity: 0.8; text-align: center; padding-bottom: 1px;">
+		<p>&copy;HK Productions 2017 <br> All the information used was gathered from multiple websites (wowwiki, wowpedia, and wowprogress, respectively), which were cited at the top of the page via links.<br>Special thanks to fontmeme.com for allowing me to not spend hours in gimp for a title sequence!</p>	
+	</div>
+</footer>
+
+</html>
