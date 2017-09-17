@@ -29,7 +29,7 @@ def main():
 # I have decided to finish this since i have a bit of time.
     elif target == 13:
         return render_template('finalizedstate3.html', done = done)
-    elif target == 15:
+    elif target == 16:
         return render_template('finalizedstate4.html', done = done)
     elif target == 23:
         return render_template('finalizedstate5.html', done = done)
