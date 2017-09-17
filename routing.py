@@ -1,6 +1,7 @@
 #<input type = '<type>' name = '<name>' />
 
 from flask import Flask, url_for, render_template
+from random import randint
 from app import app
 
 import pymysql, time
@@ -28,7 +29,11 @@ def main():
 # Right now, i`m leaving these commented. While I can check If this method will work,
 # I have decided to finish this since i have a bit of time.
     elif target == 13:
-        return render_template('finalizedstate3.html', done = done)
+        x = randint(1,2)
+        if x == 1:
+            return render_template('finalizedstate3.html', done = done)
+        elif x ==2:
+            return render_template('finalizedstate8.html', done = done)
     elif target == 16:
         return render_template('finalizedstate4.html', done = done)
     elif target == 23:
