@@ -5,7 +5,7 @@ Program that uses a known Database(MySQL), Python, and the Flask framework to ou
 ## Purpose
 Basically a test/refresher on SQL databases for myself, as well as more knowledge/learning of the Flask framework. Included the actual database files, yet might not be enough iformation to properly run the program. Will look into this further/on a seperate environemt to double-check.
 
-**Update: I did not include the actual excel file, so there is no way to easily import the file to MySQL. Need to remake the database.
+**Update: I did not include the actual excel file, so there is no way to easily import the file to MySQL. Need to remake the database.**
 
 ## Instructions
 Assuming a Command Prompt usage and you have installed the proper packages onto your system:
