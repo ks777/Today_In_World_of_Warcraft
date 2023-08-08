@@ -21,5 +21,4 @@ Assuming a Command Prompt usage and you have installed the proper packages onto 
 
 -Enjoy!
 
-**UPDATE: After a hardware wipe, this project was affected by losing most of its database. Database recreated and updated prior to current events.**
 
